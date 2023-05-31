@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+
+    <link href="./styles/styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="outercontainer">
+        <div class="main">
+            <div class="container">
+                <div id="square" class="square"></div>
+                <span id="colorcode">#FFFFFF</span>
+                <span id="colorname">White</span>
+            </div>
+
+            <div class="colorselector">
+                <label>Select a color </label>
+                <input type="color" class="form-control form-control-color" id="colorPicker" value="#FFFFFF">
+
+            </div>
+        </div>
+
+        <div class="extracolors">
+            <div class="analogcolors font">
+                <span>Analog</span>
+                <div class="container">
+                    <div>
+                        <div class="square" id="analogcolor1"></div>
+                        <span class="analogcode" id="analogcode1" >#FFFFFF</span>
+                    </div>
+                    <div>
+                        <div class="square" id="analogcolor2"></div>
+                        <span class="analogcode" id="analogcode2" >#FFFFFF</span>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="complementarycolors font">
+                <span>Complementary</span>
+                <div class="container">
+                    <div>
+                        <div class="square" id="complementarycolor1"></div>
+                        <span class="complementarycode" id="complementarycode1">#FFFFFF</span>
+                    </div>
+
+                    <div>
+                        <div class="square" id="complementarycolor2"></div>
+                        <span class="complementarycode" id="complementarycode2">#FFFFFF</span>
+                    </div>
+                </div>
+            </div>
+            <div class="splitcomplementary font">
+                <span>Split-Complementary</span>
+                <div class="container">
+                    <div>
+                        <div class="square" id="splitcomplementarycolor1"></div>
+                        <span class="splitcomplementarycode" id="splitcomplementarycode1">#FFFFFF</span>
+                    </div>
+
+                    <div>
+                        <div class="square" id="splitcomplementarycolor2"></div>
+                        <span class="splitcomplementarycode" id="splitcomplementarycode2" >#FFFFFF</span>
+                    </div>
+                </div>
+            </div>
+            <div class="triadiccolors font">
+                <span>Triadic</span>
+                <div class="container">
+                    <div>
+                        <div class="square" id="triadiccolor1"></div>
+                        <span class="triadiccode" id="triadiccode1">#FFFFFF</span>
+                    </div>
+
+                    <div>
+                        <div class="square" id="triadiccolor2"></div>
+                        <span class="triadiccode" id="triadiccode2" >#FFFFFF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/script.js"></script>
+
+</html>

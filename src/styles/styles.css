@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(51, 51, 51);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    animation: fade 2s ease;
+}
+
+.outercontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.extracolors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.font{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.colorselector{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#colorcode{
+    font-size: 25px;
+}
+#colorname{
+    font-size: 40px;
+    width: 350px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>span {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-justify: inter-word;
+    word-break: keep-all;
+    text-align: center;
+}
+
+input[type="color"] {
+	appearance: none;
+	border: none;
+    background-color: rgb(51, 51, 51);	
+}
+input[type="color"]:hover{
+    cursor:pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: 1px solid white;
+    border-radius: 40px;
+}
+
+.square {
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    transition: transform 0.1s ease;
+    
+}
+
+.square:hover {
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+.analogcolors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.analogcolors>.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.analogcolors>.container>div>.square{
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+}
+.analogcolors>.container>div>.analogcode{
+    font-size: 14px;
+}
+.analogcolors>span{
+    font-size: 25px;
+}
+.analogcolors>.container>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.complementarycolors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.complementarycolors>.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.complementarycolors>.container>div>.square{
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+}
+.complementarycolors>.container>div>.complementarycode{
+    font-size: 14px;
+}
+.complementarycolors>span{
+    font-size: 25px;
+}
+.complementarycolors>.container>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.splitcomplementary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.splitcomplementary>.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.splitcomplementary>.container>div>.square{
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+}
+.splitcomplementary>.container>div>.splitcomplementarycode{
+    font-size: 14px;
+}
+.splitcomplementary>span{
+    font-size: 25px;
+}
+.splitcomplementary>.container>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.triadiccolors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.triadiccolors>.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.triadiccolors>.container>div>.square{
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+}
+.triadiccolors>.container>div>.triadiccode{
+    font-size: 14px;
+}
+.triadiccolors>span{
+    font-size: 25px;
+}
+.triadiccolors>.container>div{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
