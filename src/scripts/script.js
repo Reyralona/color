@@ -1888,11 +1888,7 @@ function update(evt){
   colorname.innerText = colormatch[1];
 
   
-  
-
 }
-
-
 
 elColorPicker.addEventListener("input", update);
 
